@@ -527,38 +527,7 @@ input[type=text] {
     }
 }
 
-@media screen and (max-width: 1366px) {
-    .section2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        /* grid-template-rows: 152px 1060px 742px 100px; */
-        grid-template-rows: 152px 1.5fr 0.5fr 100px;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "header header header"
-            "big-pic big-pic big-pic"
-            "small-pic small-pic small-pic"
-            "footer_2 footer_2 footer_2";
-    }
 
-    .big-pic {
-        grid-area: big-pic;
-        background-image: url(../img/Naturale.jpg);
-        background-size: cover;
-    }
-
-    .small-pic {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1.5fr;
-        grid-template-rows: 500px;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "pic1 pic2 pic3";
-        grid-area: small-pic;
-    }
-}
 
 @media screen and (max-width: 1280px) {
     .hidden-contact-button {
@@ -715,5 +684,108 @@ input[type=text] {
         padding-left: 50px;
         font-size: 25px;
         font-family: 'FavoritPro', sans-serif;
+    }
+    .logo-img {
+        height: 80px;
+        padding-right: 0px;
+        margin-top: 45px;
+    }
+                                                    /* Container2 */
+    .text-project {
+        display: grid;
+        font-family: 'FavoritProRegular', sans-serif;
+        font-weight: 400;
+        font-size: 60px;
+        text-transform: uppercase;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    
+    .text-project-footer {
+        display: grid;
+        font-family: 'FavoritProRegular', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-left: 30px;
+    }
+    
+    .container_portfolio {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        height: 100%;
+        background-color: #F2D0D0;
+    }
+    
+    .section2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 152px 1060px 742px 100px; */
+        grid-template-rows: 152px 1fr 1fr 100px;
+       
+    }
+    .small-pic {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.8fr 1fr;
+        grid-template-areas: 
+        "pic1"
+        "pic2"
+        "pic3";
+    
+    }
+    .pic1 {
+        display: grid;
+        /* height: 350px; */
+        background-position: center;
+        /* background-size: cover; */
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .pic2 {
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .pic3 {
+        background-position: center;
+        background-size: cover;
+        height: 580px;
+    }
+    .section2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 152px 220px 1fr 100px;
+    }
+    .big-pic {
+        background-image: url(../img/Naturale.jpg);
+        background-position: center;
+        background-size: 115% 115%;
+        background-repeat: no-repeat;
+    }
+    .header2 {
+        display: grid;
+        margin: 0;
+        padding: 0;
+        justify-items: start;
+        grid-area: header;
+        background-color: #F2D0D0;
+        justify-items: center;
+        align-items: center;
+        
+    }
+    
+    
+    
+    .footer_2 {
+        display: grid;
+        grid-area: footer_2;
+        background-color: #F2D0D0;
+        align-items: center;
+        justify-items: start;
     }
 }
