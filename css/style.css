@@ -397,97 +397,6 @@ input[type=text] {
 }
 
 /* Медиа запросы */
-@media screen and (max-width: 1700px) {
-    body {
-        background-color: black;
-
-    }
-
-    .container3 {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        background-image: url(../img/.jpg);
-        background-color: black;
-        background-size: cover;
-
-    }
-
-    .ask_section {
-        width: 1455px;
-        height: 896px;
-        margin: 0px 0px;
-        padding-top: 0px;
-        border: 0px solid #F2D0D0;
-        display: grid;
-        justify-items: center;
-        grid-template-rows: 160px 40px 100px 40px 100px 40px 140px 70px 140px;
-        gap: 0px;
-    }
-
-    .text-h1-f {
-        font-family: 'FavoritProRegular', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        text-transform: uppercase;
-    }
-
-    .write,
-    .send-btn {
-        width: 1468px;
-        background: #000000;
-        color: #F2D0D0;
-        font-family: 'FavoritPro', sans-serif;
-        font-weight: 700;
-        font-size: 24px;
-        text-transform: uppercase;
-    }
-
-    .write {
-        padding-top: 20px;
-        padding-left: 50px;
-    }
-
-    .your-name {
-        min-width: 1468px;
-        /* margin-bottom: -1px; */
-        background: #F2D0D0;
-    }
-
-    .e-mail {
-        min-width: 1468px;
-        background: #F2D0D0;
-    }
-
-    .describe {
-        min-width: 1468px;
-        background: #F2D0D0;
-    }
-
-    .send-btn {
-        display: block;
-        max-width: 1468px;
-        background: #7F7E5C;
-        height: 140px;
-        padding-top: 20px;
-        padding-left: 50px;
-    }
-
-    .text-h1-f {
-        padding-top: 20px;
-        padding-left: 50px;
-    }
-
-    input[type=text] {
-        width: 1468px;
-        background-color: #F2D0D0;
-        border: none;
-        outline: none;
-        padding-left: 50px;
-        font-size: 25px;
-        font-family: 'FavoritPro', sans-serif;
-    }
-}
 
 @media screen and (max-width: 1455px) {
     .services {
@@ -536,12 +445,15 @@ input[type=text] {
         position: absolute;
         color: #F2D0D0;
     }
+
     .info h2 {
         font-size: 15px;
     }
+
     .credits {
         padding-right: 29px;
     }
+
     .text-logo-1 {
         font-family: 'FavoritProRegular', sans-serif;
         font-weight: 400;
@@ -550,6 +462,7 @@ input[type=text] {
         line-height: 95%;
         margin-top: 36px;
     }
+
     .text-logo-2 {
         font-family: 'FavoritPro', sans-serif;
         font-weight: 400;
@@ -557,6 +470,7 @@ input[type=text] {
         text-transform: uppercase;
         line-height: 95%;
     }
+
     .button-for-contact {
         padding-top: 14px;
         padding-left: 27px;
@@ -566,6 +480,7 @@ input[type=text] {
         width: 100%;
         transition: all 0.3s ease;
     }
+
     .menu-block {
         display: grid;
         grid-template-columns: 1fr;
@@ -600,27 +515,29 @@ input[type=text] {
         display: grid;
         justify-items: center;
     }
-    /* CСтраница обратной связи */
+
+    /* Страница обратной связи */
     .container3 {
         width: 100%;
         height: 100%;
-        display: grid;
-        background-image: url(../img/.jpg);
-        background-color: black;
+        display: block;
+        background-image: url(../img/ask_bg.jpg);
+        background-position: center;
         background-size: cover;
 
     }
 
     .ask_section {
-        width: 1455px;
-        height: 896px;
-        margin: 0px 0px;
-        padding-top: 0px;
-        border: 0px solid #F2D0D0;
+        width: 100%;
+        height: 0%;
         display: grid;
-        justify-items: center;
-        grid-template-rows: 160px 40px 100px 40px 100px 40px 140px 70px 140px;
-        gap: 0px;
+        border: none;
+        margin: 0;
+        padding-top: 0;
+        background-color: rgb(0, 0, 0);
+        /* grid-template-rows: 100px 40px 100px 40px 100px 40px 100px 0px 0px; */
+        grid-template-rows: 2fr 0.5fr 1.5fr 1fr 1.5fr 1fr 1.5fr 0fr 1fr;
+
     }
 
     .text-h1-f {
@@ -628,11 +545,12 @@ input[type=text] {
         font-weight: 400;
         font-size: 16px;
         text-transform: uppercase;
+        
     }
 
     .write,
     .send-btn {
-        width: 1468px;
+        width: 100%;
         background: #000000;
         color: #F2D0D0;
         font-family: 'FavoritPro', sans-serif;
@@ -643,54 +561,51 @@ input[type=text] {
 
     .write {
         padding-top: 20px;
-        padding-left: 50px;
+        padding-left: 0px;
     }
 
     .your-name {
-        min-width: 1468px;
+        min-width: 100%;
         /* margin-bottom: -1px; */
         background: #F2D0D0;
     }
 
     .e-mail {
-        min-width: 1468px;
+        min-width: 100%;
         background: #F2D0D0;
     }
 
     .describe {
-        min-width: 1468px;
+        min-width: 100%;
         background: #F2D0D0;
     }
 
     .send-btn {
-        display: block;
-        max-width: 1468px;
+        max-width: 100%;
         background: #7F7E5C;
-        height: 140px;
-        padding-top: 20px;
-        padding-left: 50px;
+        height: 50px;
+        width: 100px;
+        /* padding-top: 20px;
+        padding-left: 50px; */
     }
 
     .text-h1-f {
         padding-top: 20px;
-        padding-left: 50px;
+        padding-left: 0px;
     }
 
     input[type=text] {
-        width: 1468px;
+        width: 100%;
         background-color: #F2D0D0;
         border: none;
         outline: none;
-        padding-left: 50px;
+        padding-left: 0px;
         font-size: 25px;
         font-family: 'FavoritPro', sans-serif;
+
     }
-    .logo-img {
-        height: 80px;
-        padding-right: 0px;
-        margin-top: 45px;
-    }
-                                                    /* Container2 */
+
+    /* Container2 */
     .text-project {
         display: grid;
         font-family: 'FavoritProRegular', sans-serif;
@@ -700,7 +615,7 @@ input[type=text] {
         margin-top: 0px;
         margin-left: 0px;
     }
-    
+
     .text-project-footer {
         display: grid;
         font-family: 'FavoritProRegular', sans-serif;
@@ -709,7 +624,7 @@ input[type=text] {
         text-transform: uppercase;
         margin-left: 30px;
     }
-    
+
     .container_portfolio {
         display: grid;
         grid-auto-columns: 1fr;
@@ -719,24 +634,26 @@ input[type=text] {
         height: 100%;
         background-color: #F2D0D0;
     }
-    
+
     .section2 {
         display: grid;
         grid-template-columns: 1fr;
         /* grid-template-rows: 152px 1060px 742px 100px; */
         grid-template-rows: 152px 1fr 1fr 100px;
-       
+
     }
+
     .small-pic {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 0.8fr 1fr;
-        grid-template-areas: 
-        "pic1"
-        "pic2"
-        "pic3";
-    
+        grid-template-areas:
+            "pic1"
+            "pic2"
+            "pic3";
+
     }
+
     .pic1 {
         display: grid;
         /* height: 350px; */
@@ -745,28 +662,31 @@ input[type=text] {
         width: 100%;
         background-repeat: no-repeat;
     }
-    
+
     .pic2 {
         background-position: center;
         background-size: cover;
     }
-    
+
     .pic3 {
         background-position: center;
         background-size: cover;
         height: 580px;
     }
+
     .section2 {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 152px 220px 1fr 100px;
     }
+
     .big-pic {
         background-image: url(../img/Naturale.jpg);
         background-position: center;
         background-size: 115% 115%;
         background-repeat: no-repeat;
     }
+
     .header2 {
         display: grid;
         margin: 0;
@@ -776,11 +696,9 @@ input[type=text] {
         background-color: #F2D0D0;
         justify-items: center;
         align-items: center;
-        
+
     }
-    
-    
-    
+
     .footer_2 {
         display: grid;
         grid-area: footer_2;
