@@ -130,11 +130,12 @@ body {
 /* HIDDEN BUTTON */
 .hidden-contact-button {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 0fr 1fr 0fr;
     position: absolute;
     margin-left: 634px;
     margin-top: -163px;
     color: #F2D0D0;
+    width: 100vw;
 }
 
 .button-contact-button .text-h1 {
@@ -562,9 +563,40 @@ input[type=text] {
 @media screen and (max-width: 1280px) {
     .hidden-contact-button {
         margin-left: 0px;
-        margin-top: -163px;
+        width: 100%;
+        position: absolute;
+        color: #F2D0D0;
     }
-
+    .info h2 {
+        font-size: 15px;
+    }
+    .credits {
+        padding-right: 29px;
+    }
+    .text-logo-1 {
+        font-family: 'FavoritProRegular', sans-serif;
+        font-weight: 400;
+        font-size: 60px;
+        text-transform: uppercase;
+        line-height: 95%;
+        margin-top: 36px;
+    }
+    .text-logo-2 {
+        font-family: 'FavoritPro', sans-serif;
+        font-weight: 400;
+        font-size: 50px;
+        text-transform: uppercase;
+        line-height: 95%;
+    }
+    .button-for-contact {
+        padding-top: 14px;
+        padding-left: 27px;
+        background-color: #7F7E5C;
+        box-sizing: border-box;
+        height: 163px;
+        width: 100%;
+        transition: all 0.3s ease;
+    }
     .menu-block {
         display: grid;
         grid-template-columns: 1fr;
@@ -574,12 +606,14 @@ input[type=text] {
         display: grid;
         grid-template-columns: 1fr;
         background-image: url(../img/forest.jpg);
+        max-width: 100%;
         background-position: center;
         background-size: cover;
     }
 
     .about-us-place {
         background-color: rgba(250, 235, 215, 0.6);
+        width: 100%;
 
     }
 
@@ -596,5 +630,90 @@ input[type=text] {
     .img-footer {
         display: grid;
         justify-items: center;
+    }
+    /* CСтраница обратной связи */
+    .container3 {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        background-image: url(../img/.jpg);
+        background-color: black;
+        background-size: cover;
+
+    }
+
+    .ask_section {
+        width: 1455px;
+        height: 896px;
+        margin: 0px 0px;
+        padding-top: 0px;
+        border: 0px solid #F2D0D0;
+        display: grid;
+        justify-items: center;
+        grid-template-rows: 160px 40px 100px 40px 100px 40px 140px 70px 140px;
+        gap: 0px;
+    }
+
+    .text-h1-f {
+        font-family: 'FavoritProRegular', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    .write,
+    .send-btn {
+        width: 1468px;
+        background: #000000;
+        color: #F2D0D0;
+        font-family: 'FavoritPro', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    .write {
+        padding-top: 20px;
+        padding-left: 50px;
+    }
+
+    .your-name {
+        min-width: 1468px;
+        /* margin-bottom: -1px; */
+        background: #F2D0D0;
+    }
+
+    .e-mail {
+        min-width: 1468px;
+        background: #F2D0D0;
+    }
+
+    .describe {
+        min-width: 1468px;
+        background: #F2D0D0;
+    }
+
+    .send-btn {
+        display: block;
+        max-width: 1468px;
+        background: #7F7E5C;
+        height: 140px;
+        padding-top: 20px;
+        padding-left: 50px;
+    }
+
+    .text-h1-f {
+        padding-top: 20px;
+        padding-left: 50px;
+    }
+
+    input[type=text] {
+        width: 1468px;
+        background-color: #F2D0D0;
+        border: none;
+        outline: none;
+        padding-left: 50px;
+        font-size: 25px;
+        font-family: 'FavoritPro', sans-serif;
     }
 }
